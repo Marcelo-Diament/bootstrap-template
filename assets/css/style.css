@@ -1,0 +1,70 @@
+/* Resets - configurações iniciais da nossa folha de estilo - início
+	** 'Zeramos' as margens e padding, declaramos que as medidas (width, height) serão definidas pelas bordas.
+	** No nosso caso, em que utilizaremos a rolagem (scroll) - por se tratar de um site single page -,
+	** definimos o scroll-behavior (comportamento do scroll ou rolagem) somo suave (smooth) */
+	/* Essa parte abaixo está comentada pois foi declarada no header */
+	/**{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		scroll-behavior: smooth;
+	}
+	html {
+		font-size: 18px;
+		font-weight: bold;
+	}*/
+/* Resets - configurações iniciais da nossa folha de estilo - início
+
+/* Estilo genérico, para as respectivas tags declaradas como seletores. - início
+	** Há alguns seletores mais específicos, como por exemplo:
+	**
+	**		< p.paragrafo-especial {...} >
+	**
+	** Esse seletor teria como alvo (target) parágrafos que contivessem o atributo:"valor" da seguinte maneira:
+	**
+	** 		<p class="paragrafo-especial"> ... </p>
+	**
+	** Nesses casos - de seletores mais específicos -, os estilos são sobrepostos.
+	**
+	** Também há sobreposição quando declaramos duas vezes o mesmo seletor com a mesma propriedade com valores distintos.
+	** Exemplo:
+	**
+	**		p {
+	**			color: red; [sairía vermelha a cor da fonte de parágrafos	
+	**			color: blue; [mas como azul foi declarado depois - e o CSS é lido de 'cima para baixo', o azul será a cor aplicada.
+	**		}
+	**
+	*/
+	/*section {
+		text-align: center;
+	}
+	p {
+		font-size: 1.3em;
+	}
+	ul {
+		list-style: none;
+	}
+	li {
+		line-height: 2.2em;
+	}
+	label {
+		text-align: left;
+	}
+	a, a:hover {
+		text-decoration: none;
+	}*/
+/* Estilo genérico, para as respectivas tags declaradas como seletores - final */
+
+
+/* Estilo genérico para classes - início */
+	/*.navbar-dark .navbar-nav .nav-link {
+		color: #d5e1e6;
+	}
+	.btn {
+		transition: all 0.8s ease-in-out;
+	}
+	.btn.btn-dark:hover {
+		background-color: rgba(52,58,64,0.3);
+		border: 2px solid #fff;
+    }*/
+    

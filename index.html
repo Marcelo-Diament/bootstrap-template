@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!-- Configurações como characters, viewport, cache... -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Cache-control" content="public">
+        <meta name="revisit-after" content="1 year">
+        <meta name="identifier-URL" content="https://djament.com.br/estudos/bootstrap-template-customizado/index.php">
+        <link rel="canonical" href="https://djament.com.br/estudos/bootstrap-template-customizado/">
+        
+        <!-- Meta título e descrição para crawlers (SEO) e mídias (Open Graph, utilizado pelo Facebook, Whatsapp...) -->
+        <meta name="title" content="Bootstrap | Template">
+        <meta name="description" content="Site para estudo do uso do HTML, CSS e Bootstrap">
+        <meta name="abstract" content="Template Boostrap Customizado">
+        <meta property="og:site_name" content="Blend 04 | Bootstrap - Template">
+        <meta property="og:locale" content="pt-BR">
+        <meta name="og:locality" content="São Paulo">
+        <meta name="og:region" content="SP">
+        <meta name="og:country-name" content="BR">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="assets/img/logo.png">
+        <!-- Indica se deve ou não ser indexado e 'seguido' pelos mecanismos de busca. Há um arquivo para isso também, o robots.txt. -->
+        <meta name="robots" content="index,follow">
+    
+        <!-- Meta sobre a autoria do site -->
+        <meta name="author" content="Marcelo Diament, Djament Comunicação">
+        <meta name="contact" content="contato@djament.com.br">
+        <meta name="reply-to" content="contato@djament.com.br">
+        <meta name="copyright" content="Djament">
+        <meta name="web_author" content="Djament Comunicação">
+    
+        <!-- Meta sobre o site em si -->
+        <meta name="rating" content="general">
+        <meta name="theme-color" content="#8c654c">
+    
+        <!-- Meta para baixar o site para o celular (web app, um 'semi-app' - NÃO é o PWA - Progressive Web Application) -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Bootstrap | Template">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" sizes="60x60" href="assets/img/logo.png">
+    
+        <!-- Favicon (imagem que fica na aba do navegador) -->
+        <link rel="icon" type="image/png" sizes="60x60" href="assets/img/logo.png">
+    
+        <!-- Título da aba do navegador -->
+        <title>Bootstrap | Template</title>
+    
+    
+        <!-- Estilo Bootstrap -->
+        <link async defer rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <!-- Estilo FontAweomse -->
+        <link async defer rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+        <!-- Nosso estilo -->
+    
+        <!-- Nosso estilo - comentamos pois utilizaremos o minificado - mas quando forem mexer, usem o normal e troquem o link do minificado pelo 'normal' -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!-- Estilo interno (declarado no head) - é uma boa prática? Não! Mas... vale a pena declararmos o estilo da primeira dobra para evitarmos bloquear a renderização da primeira dobra -->
+        <style>
+            *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}html{font-size:18px;font-weight:700}section{text-align:center}p{font-size:1.3em}ul{list-style:none}li{line-height:2.2em}label{text-align:left}a,a:hover{text-decoration:none}.navbar-dark .navbar-nav .nav-link{color:#d5e1e6}.btn{transition:all .8s ease-in-out}.btn.btn-dark:hover{background-color:rgba(52,58,64,.3);border:2px solid #fff}.topo{background-color:#b37c59;-webkit-background-size:cover;background-size:cover;background-position:center;height:100vh;color:#fff}#topo1{background-image:url(assets/img/bg-header.jpg)}#topo2{background-image:url(assets/img/bg-header2.jpg)}#topo3{background-image:url(assets/img/bg-header3.jpg)}
+        </style>
+    
+        <!-- <link rel="preload" href="assets/css/style.min.css" as="style"> Pré-carregando o estilo -->
+        <!-- <link rel="prerender" href="assets/css/style.min.css" as="style"> Pré-renderizando o estilo -->
+        <!-- <link async defer rel="stylesheet" type="text/css" href="assets/css/style.min.css"> -->
+    
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="Logo do meu projeto" height="30" width="30">
+            <span>Bootstrap</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Produtos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
