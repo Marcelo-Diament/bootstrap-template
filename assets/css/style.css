@@ -66,5 +66,188 @@
 	.btn.btn-dark:hover {
 		background-color: rgba(52,58,64,0.3);
 		border: 2px solid #fff;
-    }*/
-    
+	}*/
+	.fa-phone {
+		transform: rotateZ(115deg);
+	}
+	.fa-whatsapp {
+		font-size: 1.25em;
+	}
+	.fa-phone, .fa-map-marker-alt, .fa-whatsapp, .fa-envelope {
+		transition: transform 0.8s ease-in-out;
+	}
+	ul li a:hover .fa-map-marker-alt, ul li a:hover .fa-phone, ul li a:hover .fa-whatsapp, ul li a:hover .fa-envelope {
+		transform: rotateY(180deg);
+	}
+	.meia-linha-horizontal::after, .meia-linha-horizontal::before {
+		content: '';
+		display: inline-block;
+		border-bottom: 1px solid white;
+		min-width: 15%;
+		margin: 6px 10px;
+	}
+/* Estilo genérico para classes - final */
+
+
+/* Estilo específico para 1a parte (ou primeira dobra, ou ainda, ATF - Above The Fold) - selecionado pelo id < #topo > - início */
+	/*.topo {
+		background-color: #b37c59;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center;
+		height: 100vh;
+		color: #fff;
+	}
+	#topo1 {
+		background-image: url('../img/bg-header.jpg');
+	}
+	#topo2 {
+		background-image: url('../img/bg-header2.jpg');
+	}
+	#topo3 {
+		background-image: url('../img/bg-header3.jpg');
+	}*/
+
+	/* Aplicando estilo nas tags H1 especificamente dentro de um elemento - no caso section - de id < #topo > */
+	/*Como aplicaremos exatamente as mesmas propriedades e valores a mais de um elemento, aproveitaremos a mesma declaração utilizando mais de um seletor */
+	.com-sombra {
+		filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.5)); /* Dá certa sombra para que o texto se destaque da imagem de fundo (background-image) */
+	}
+/* Estilo específico para 1a parte (ou primeira dobra, ou ainda, ATF - Above The Fold) - selecionado pelo id < #topo > - final */
+
+/* Estilo específico para a parte 'Sobre' - selecionado pelo id < #sobre > - início */
+	#sobre {
+		min-height: 40vh;
+	}
+/* Estilo específico para a parte 'Sobre' - selecionado pelo id < #sobre > - final */
+
+/* Estilo específico para a parte 'Especialidades' - selecionado pelo id < #especialidades > - início */
+	#especialidades {
+		/*min-height: 60vh;*/
+		background-color: #8c654c;
+		color: #fff;
+		text-align: center;
+	}
+	/* Abaixo, estamos selecionando os ícones (selecionados pelas tags <i></i> que contêem a classe "fas") */
+	#especialidades i.fas {
+		font-size: 3em;
+		color: #8c654c;
+		background-color: #fff;
+		border-radius: 50%;
+		padding: 30px;
+	}
+	h5.modal-title {
+		color:#8c654c;
+	}
+	div.modal-body {
+		color: #404040;
+	}
+/* Estilo específico para a parte 'Especialidades' - selecionado pelo id < #especialidades > - final */
+
+
+/* Estilo específico para a parte 'Produtos' - selecionado pelo id < #produtos > - início */
+	#produtos .paes, #produtos .bacon, #produtos .cafe, #produtos .queijos {
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center;
+		color: #fff;
+		height: 250px;
+		width: 100%;
+		transition: all 0.8s ease-in-out;
+	}
+	#produtos .paes:hover, #produtos .bacon:hover, #produtos .cafe:hover, #produtos .queijos:hover {
+		transform: scale(0.9);
+		filter: grayscale(0.9);
+	}
+	#produtos h4 {
+		margin-bottom: 0;
+	}
+	#produtos .paes {
+		background-image: url(../img/bread.jpg);
+	}
+	#produtos .bacon {
+		background-image: url(../img/bacon.jpg);
+	}
+	#produtos .cafe {
+		background-image: url(../img/coffee.jpg);
+	}
+	#produtos .queijos {
+		background-image: url(../img/cheese.jpg);
+	}
+/* Estilo específico para a parte 'Produtos' - selecionado pelo id < #produtos > - final */
+
+
+/* Estilo específico para a parte 'Contato' - selecionado pelo id < #contato > - início */
+	#contato {
+		min-height: 100vh;
+		background-image: linear-gradient(to bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url('../img/bakery.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		color: #fff;
+	}
+	#contato ul li a {
+		color: #fff;
+		background-color: transparent;
+		padding: 5px;
+	}
+	#contato ul li a:hover {
+		background-color: #8c654c;
+	}
+	#socialLinks a, #socialLinks a:hover {
+		background-color: transparent !important;
+	}
+	#socialLinks a i {
+		transition: transform 0.8s ease-in-out;
+		background-color: transparent;
+		border-radius: 50%;
+		padding: 15px;
+	}
+	#socialLinks a:hover i {
+		transform: rotateY(360deg);
+		background-color: #8c654c;
+	}
+	iframe.mapa {
+		width: calc(100vw - 15.5px);
+		margin-left: -15px;
+		margin-bottom: -7px;
+	}
+	.fab.fa-facebook-square, .fab.fa-instagram, .fab.fa-twitter, .fab.fa-tripadvisor {
+		font-size: 2em;
+	}
+/* Estilo específico para a parte 'Contato' - selecionado pelo id < #contato > - final */
+
+/* Estilo específico para o Copyright (footer) - início */
+	footer {
+		color: #fff;
+	}
+	#copy {
+		text-align: center;
+		line-height: 6em;
+	}
+/* Estilo específico para o Copyright (footer) - final */
+
+/* Extra! Customizando a barra de rolagem (scrollbar) - início */
+	/* Altera o tamanho da barra de rolagem */
+	::-webkit-scrollbar {
+	  width: 10px;
+	}
+
+	/* Altera a cor de fundo da barra de rolagem */
+	::-webkit-scrollbar-track {
+	  background: #f1f1f1;
+	}
+
+	/* Altera a cor e a borda da barra de rolagem e deixa 'redonda' */
+	::-webkit-scrollbar-thumb {
+	  border: 1px solid #f1f1f1;
+	  background: #8c654c;
+	  border-radius: 5px;
+	}
+
+	/* Altera a cor da barra de rolagem quando o mouse é passado por cima da barra de rolagem */
+	::-webkit-scrollbar-thumb:hover {
+	  background: #555;
+	}
+/* Extra! Customizando a barra de rolagem (scrollbar) - final */
